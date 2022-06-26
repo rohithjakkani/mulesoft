@@ -2,7 +2,7 @@ package com.company;
 
 import java.sql.*;
 
-public class InsertRecordIntoDb {
+public class InsertIntoDb{
     public static void main(String[] args) {
         try {
 
@@ -16,22 +16,22 @@ public class InsertRecordIntoDb {
 
             stmt = con.createStatement(); // Create Statement
 
-            String query0 = "INSERT INTO MyMovies values ('bigil','vijay','nayanathara', 2019,'atlee');";
+            String query0 = "INSERT INTO Movies values ('RRR','Ramcharan','Aliabhat', 2022,'Rajamouli');";
             stmt.executeUpdate(query0); // Create Query-1
 
-            String query1 = "INSERT INTO MyMovies values ('master','vijay','malavika', 2020,'lokesh');";
+            String query1 = "INSERT INTO Movies values ('Major','Adivi Shesh','malavika', 2020,'lokesh');";
             stmt.executeUpdate(query1); // Create Query-1
 
-            String query2 = "INSERT INTO MyMovies values ('beast','vijay','pooja',2022,'nelson');";
+            String query2 = "INSERT INTO Movies values ('Sarkaruvari pata','vijay','pooja',2022,'nelson');";
             stmt.executeUpdate(query2); // Create Query-2
 
-            String query3 = "INSERT INTO MyMovies values ('jersey','nani','Shradda',2018,'gowtham');";
+            String query3 = "INSERT INTO Movies values ('Antey Sundaraniki','nani','Shradda',2022,'gowtham');";
             stmt.executeUpdate(query3); // Create Query-3
 
-            String query4 = "INSERT INTO MyMovies values ('don','sivakarthikeya','priyanka',2022,'C.B chakravarthi');";
+            String query4 = "INSERT INTO Movies values ('Mahaan','Dhanush','priyanka',2022,'C.B chakravarthi');";
             stmt.executeUpdate(query4); // Create Query-4
 
-            String query5 = "INSERT INTO MyMovies values ('karnan','dhanush','rajishavijayan',2019,'mariselvaraj');";
+            String query5 = "INSERT INTO Movies values ('Drushyam','dhanush','rajishavijayan',2019,'mariselvaraj');";
             stmt.executeUpdate(query5);
             stmt.close();
 
@@ -40,6 +40,6 @@ public class InsertRecordIntoDb {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Record  Insertion successful");
+        System.out.println("Record  Inserted successfully");
     }
 }
