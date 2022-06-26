@@ -16,7 +16,7 @@ public class CreateMoviesDB{
             System.out.println("Database Connection Successful !!");
 
             stmt = conn.createStatement();
-            String qry = "CREATE TABLE MyMovies " + "(MovieName TEXT NOT NULL,"
+            String qry = "CREATE TABLE Movies " + "(MovieName TEXT NOT NULL,"
                     + " ActorName TEXT NOT NULL, " + " ActressName TEXT NOT NULL, "
                     + " ReleaseYear INTEGER NOT NULL, " + " DirectorName TEXT NOT NULL )";
 
