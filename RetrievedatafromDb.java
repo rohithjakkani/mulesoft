@@ -16,7 +16,7 @@ public class RetrieveDataFromDb {
 
             stmt = con.createStatement();
 
-            ResultSet rs = stmt.executeQuery("SELECT * FROM MyMovies;");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM Movies;");
 
             while (rs.next()) {
 
@@ -52,6 +52,6 @@ public class RetrieveDataFromDb {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Data retrieval successful!!");
+        System.out.println("Data successfully retrieved");
     }
 }
